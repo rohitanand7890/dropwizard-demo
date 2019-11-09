@@ -1,10 +1,11 @@
 package com.dropwizardexample.in;
-import io.dropwizard.Configuration;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.dropwizard.Configuration;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.security.auth.login.Configuration;
-
+// deserialize - file -> obj
+// serialize - obj -> file
 public class HelloWorldConfiguration extends Configuration {
     @NotEmpty
     private String template;
